@@ -67,7 +67,7 @@ const gsimap_init = function(map, layer) {
     maplogo.textContent = "GSIMAP" // タイトル変更
 
     layer.addIcon(35.943560, 136.188917, "鯖江駅", "icon/icon-purple.png", 32)
-    layer.addIcon(35.942729, 136.198846, "めがね会館", "saikoro ikon.png", 32)
+    layer.addIcon(35.942729, 136.198846, "めがね会館", "saitokatsuya/saikoro ikon.png", 32)
 
     // SPARQLエンドポイント
     setSPARQLEndpoint("https://sparql.opendata.cc/data/sparql")
@@ -92,7 +92,7 @@ const gsimap_init = function(map, layer) {
 			var lng = item.lng.value;
             var name = item.name.value;
             
-            layer.addIcon(lat, lng, name, "yakitori ikon.png", 32, function(name) {
+            layer.addIcon(lat, lng, name, "saitokatsuya/yakitori ikon.png", 32, function(name) {
                 if (name.indexOf("秋吉") >= 0) {
                     alert("あたり！")
                 }
